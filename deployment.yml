@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user-management-service
+  labels:
+    app: user-management-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user-management-service
+  template:
+    metadata:
+      labels:
+        app: user-management-service
+    spec:
+      containers:
+        - name: user-management-service
+          image: gcr.io/PROJECT_ID/IMAGE:TAG  # Replace with your Docker Hub image and tag
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "80Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
