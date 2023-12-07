@@ -19,7 +19,7 @@ spec:
           image: gcr.io/PROJECT_ID/IMAGE:TAG  # Replace with your Docker Hub image and tag
           imagePullPolicy: Always
           ports:
-            - containerPort: 9091
+            - containerPort: 8080
           resources:
             requests:
               cpu: "200m"
