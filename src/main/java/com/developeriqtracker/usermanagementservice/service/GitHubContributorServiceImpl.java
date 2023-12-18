@@ -34,6 +34,7 @@ public class GitHubContributorServiceImpl implements GitHubContributorService {
 
     }
 
+
     @Override
     public List<GitHubContributor> getAllContributors() {
         return this.gitHubContributorRepository.findAll();
