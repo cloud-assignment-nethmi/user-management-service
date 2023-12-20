@@ -18,7 +18,7 @@ public class GitHubContributorTest {
     @Test
     public void testGitHubContributorModel() {
         // Mock data
-        String id = "123";
+        String id = "1245";
         String login = "john_doe";
         int gitHubId = 456;
         String nodeId = "abc123";
